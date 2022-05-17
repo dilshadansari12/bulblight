@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light-bulb</title>
+    <style>
+
+   *{
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+       background-color: blue;
+  
+   }
+   #all{
+       width: 80%;
+      height: 100vh;
+       margin: 20vh auto;
+       /* background-color: blue; */
+       /* border: 2px solid red; */
+   }
+
+   #l-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+   #l-img img{
+        width: 250px;
+        height: 250px;
+        /* border: 2px solid green; */
+   }
+
+   #btn{
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+   #btn1 , #btn2{
+       width: 150px;
+       height: 50px;
+       font-size: 16px;
+       background-color:gold;
+       border: 2px solid white;
+   }
+
+   p{
+       color: white;
+       font-size: 18px;
+       text-align: center;
+   }
+    </style>
+</head>
+<body>
+
+
+    <div id="all">
+        <p >Keep the lights on in the room only when needed and unplug electrical devices when not in use</p>
+        <div id="l-img"> <img src="off.png" alt="light on off" > </div>
+        <div id="btn"> 
+            <button id="btn1">light-on</button>
+            <button id="btn2">light-off</button>    
+
+        </div>
+
+    </div>
+
+
+<script>
+
+
+    
+    document.getElementById("btn1").addEventListener("click", ()=>{
+      let imga = document.getElementById("l-img").firstElementChild.attributes[0].value="on.png";
+
+  })
+
+    
+  document.getElementById("btn2").addEventListener("click", ()=>{
+      let imga = document.getElementById("l-img").firstElementChild.attributes[0].value="off.png";
+
+  })
+
+</script>
+
+    
+</body>
+</html>
